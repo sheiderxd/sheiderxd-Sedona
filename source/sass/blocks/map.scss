@@ -1,0 +1,22 @@
+.map__frame {
+    height: 350px;
+    position: absolute;
+    width: 320px;
+}
+
+@media (min-width: 768px) {
+    .map__frame {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .map__frame {
+        width: 1200px;
+    }
+}
+
+.map__photo {
+    height: 350px;
+    z-index: 0;
+}

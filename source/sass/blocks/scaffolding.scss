@@ -1,0 +1,77 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../../fonts/PTSans-Bold.woff') format('woff'),
+      url('../../fonts/PTSans-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('PTSans-Regular.woff2') format('woff2'),
+      url('PTSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'PTSans', sans-serif;
+  background-color: #eaeaea;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: 768px;
+  }  
+}
+
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 1200px;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+  border: solid 1px #e5e5e5;
+}
+

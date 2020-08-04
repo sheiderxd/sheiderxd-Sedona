@@ -1,0 +1,324 @@
+.header {
+    position: relative;
+    font-family: PT-sans;
+    background-color: #81b3d2;
+    width: 320px;
+}
+
+.header__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    width: 320px;
+    min-height: 55px;
+    background-color: #81b3d2;
+    padding: 0;
+    margin: 0;
+}
+
+.header__item {
+    background-color: #81b3d2;
+    text-align: center;
+    box-sizing: border-box;
+    height: 55px;
+    border-bottom: solid 1px rgba(1, 1, 1, 0.2);
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767px) {
+    .header__item:hover,
+    .header__item:focus {
+        background-color: #669ec0;
+    }
+
+    .header__item:active {
+        background-color: #5496bd;
+    }
+
+    .header__item:active .header__link {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+}
+
+.header__item--button {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 12px;
+    left: 80%;
+}
+
+.header__btn {
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.header__btn--closer {
+    padding: 15px;
+    margin-left: -13px;   
+}
+
+.header__btn--closer::before,
+.header__btn--closer::after {
+    width: 4px;
+    height: 25px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.header__btn--closer::after {
+    transform: rotate(-45deg);
+}
+
+.header__link {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__navigation {
+    padding-top: 220px;
+    background-color: #ffffff;
+    height: 56px;
+    position: relative;
+    display: flex;
+}
+
+.header__menu-btn--open {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 0;
+}
+
+.header__menu-btn--open::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    left: 14px;
+    top: 14px;
+    background-color: #81b3d2;
+    box-shadow: 0 7px 0 0 #81b3d2, 0 14px 0 0 #81b3d2;
+}
+
+.header__logo-link {
+    margin-left: 50%;
+    z-index: 100;
+}
+
+.header__link {
+    text-transform: uppercase;
+    font-family: "PTSans-Bold";
+}
+
+.header__link {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: auto;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.header__nav-logo {
+    width: 102px;
+    height: 83px;
+    transform: translateX(-51px);
+}
+
+.header {
+    width: 320px;
+    padding-bottom: 388px;
+    background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center 100%, center 75%, left 100%;
+    background-size: 1200px 57px, 282px 214px, auto;
+}
+
+.header--small {
+    background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA.svg"), url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center 100%, center 83%, left 100%;
+    background-size: 1200px 57px, 229px 39px, auto;
+}
+
+.header--form {
+    padding-bottom: 158px;
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+}
+
+.header__logo--index {
+    margin-left: -141px;
+    margin-top: 90px;
+}
+
+.header__logo--form {
+    margin-left: -115px;
+    height: 39px;
+    width: 229px;
+    margin-top: 53px;
+}
+
+@media (min-width: $tablet-width) {
+    
+    .header {
+        width: 768px;
+    }
+
+    .header__menu {
+        box-sizing: border-box;
+        display: flex;
+        width: 768px;
+        background-color: white;
+        justify-content: flex-start;
+    }
+
+    .header__item {
+        padding: 0;
+        width: 153px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: white;
+    }
+    
+    .header__item:nth-child(2),
+    .header__item:nth-child(6) {
+        margin-right: 153px;
+    }
+    
+    .header__link {
+        color: black;
+        padding: 0;
+        height: auto;
+    }
+
+        
+    .header__link:hover,
+    .header__link:focus {
+        color: #81b3d2;
+    }
+
+    .header__link:not([href]) {
+        color: #766357;
+    }
+
+    .header__link:not([href]):hover {
+        color: #604e43;
+    }
+
+    .header__link:not([href]):active {
+        color: #dbd8d5;
+    }
+
+    .header__link:disabled {
+        color: #cacaca;
+    }
+
+    .header__link:active {
+        color: #cacaca;
+    }
+
+    .header__logo-link {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 50%;
+    }
+
+    .header__navigation {
+        padding-top: 0;
+    }
+
+    .header__menu-btn--open {
+        display: none;
+    }
+
+    .header {
+        padding-bottom: 518px;
+        background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-tablet.jpg");
+        background-position: center 100%, center 60%, left 100%;
+        background-size: 1200px 57px, 460px 350px, auto;
+    }
+
+    .header--small {
+        background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA.svg"), url("../../img/back-tablet--small.jpg");
+        background-position: center 100%, center 60%, left 100%;
+        background-size: 1200px 57px, 458px 78px, auto;
+    }
+
+    .header--form {
+        padding-bottom: 290px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .header {
+        width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .header__menu {
+        width: 1200px;
+    }
+
+    .header__navigation {
+        min-height: 55px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header__item {
+        width: 240px;
+    }
+
+    .header__item:nth-child(2),
+    .header__item:nth-child(6) {
+        margin-right: 240px;
+    }
+
+    .header__link {
+        font-size: 14px;
+    }
+
+    .header {
+        padding-bottom: 518px;
+        background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-desktop.jpg");
+        background-position: center 100%, center 60%, center 100%;
+        background-color: #eaeaea;
+    }
+
+    .header--small {
+        background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA.svg"), url("../../img/back-desktop--small.jpg");
+        background-position: center 100%, center 60%, center 100%;
+        background-size: 1200px 57px, 461px 80px, auto;
+    }
+
+    .header--form {
+        padding-bottom: 300px;
+    }
+    
+    .header__nav-logo {
+        display: block;
+        width: 188px;
+        height: 96px;
+        transform: translateX(-94px);
+    }
+}

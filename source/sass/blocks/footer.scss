@@ -1,0 +1,146 @@
+.footer {
+    padding-top: 35px;
+    background-color: white;
+    width: 320px;
+    padding-bottom: 20px;
+}
+
+.footer__title {
+    text-align: center;
+    margin-bottom: 38px;
+    font-size: 21px;
+}
+
+.footer__links {
+    width: 152px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.footer__links li {
+    margin-bottom: 6px;
+    margin-right: 6px;
+}
+
+.footer__links li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.footer__link {
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer__link::before {
+    width: 46px;
+    height: 48px;
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    background-color: #669ec0;
+}
+
+.footer__link:active {
+    background-color: #5496bd;
+}
+
+.footer__link:active::before {
+    opacity: 0.3;
+}
+
+
+.footer__link:not(:last-child) {
+    margin-right: 6px;
+}
+
+.footer__link--twitter::before {
+    background-image: url("../../img/icon-twitter.svg");
+    background-size: 18px 14px;
+}
+
+.footer__link--facebook::before {
+    background-image: url("../../img/icon-facebook.svg");
+    background-size: 9px 18px;
+}
+
+.footer__link--youtube::before {
+    background-image: url("../../img/icon-youtube.svg");
+    background-size: 20px 14px;
+}
+
+.footer__copyright {
+    width: 150px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    display: block;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 34px;
+}
+
+.footer__copyright:hover path,
+.footer__copyright:focus path {
+    fill: #669ec0;
+}
+
+.footer__copyright:active path {
+    fill: #cacaca;
+}
+
+@media (min-width: $tablet-width) {
+    .footer {
+        display: flex;
+        padding-left: 55px;
+        padding-right: 55px;
+        box-sizing: border-box;
+        width: 768px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+
+    .footer__link {
+        margin-bottom: 0;
+    }
+
+    .footer__copyright {
+        margin: 0;
+        margin-bottom: 0;
+    }
+    
+    .footer__title {
+        margin-bottom: 0;
+    }
+
+    .footer__links {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .footer {
+        width: 1200px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
