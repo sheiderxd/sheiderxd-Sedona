@@ -8,8 +8,14 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header header--form header--small">
-            <nav class="header__navigation">
+        <header class="header header--form header--small" id="header__small--toggle">
+            <nav class="header__navigation header__navigation--open" id="header__navigation--toggle">
+                <ul id="header__menu--toggle" class="header__menu">
+                    <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
+                    <li class="header__item"><a class="header__link" href="photo.html">Фото и видео</a></li>
+                    <li class="header__item"><a class="header__link">Форма отзыва</a></li>
+                    <li class="header__item"><a class="header__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a></li>
+                </ul>
                 <a class="header__logo-link" href="index.html">
                     <picture>
                         <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
@@ -17,14 +23,9 @@
                         <img class="header__nav-logo" width="102" height="83" src="img/logotype-mobile.svg" alt="Логотип">
                     </picture>
                 </a>
-                <button class="header__btn header__menu-btn--open"></button>
-                <ul class="header__menu">
-                    <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
-                    <li class="header__item"><a class="header__link" href="photo.html">Фото и видео</a></li>
-                    <li class="header__item"><a class="header__link">Форма отзыва</a></li>
-                    <li class="header__item"><a class="header__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a></li>
-                </ul>
+                <button class="header__button header__button--close" id="header__button--toggle"></button>
             </nav>
+            <div class="header__intro--small"></div>
         </header>
         <main class="main">
             <section class="feedback">
@@ -108,5 +109,6 @@
             <span class="visually-hidden">HTML Academy</span></a>
         </footer>
     </div>
+    <script src="js/code.js"></script>
 </body>
 </html>

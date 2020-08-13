@@ -6,9 +6,6 @@
 }
 
 .header__menu {
-    position: absolute;
-    top: 0;
-    left: 0;
     list-style: none;
     width: 320px;
     min-height: 55px;
@@ -41,40 +38,18 @@
     }
 }
 
-.header__item--button {
+.header__item--btn {
     position: absolute;
-    height: 0;
-    width: 0;
-    top: 12px;
-    left: 80%;
 }
 
-.header__btn {
+.header__button {
     border: none;
     background-color: transparent;
     outline: 0;
     cursor: pointer;
-}
-
-.header__btn--closer {
-    padding: 15px;
-    margin-left: -13px;   
-}
-
-.header__btn--closer::before,
-.header__btn--closer::after {
-    width: 4px;
-    height: 25px;
-    background-color: #ffffff;
-    transform: rotate(45deg);
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 0;
-}
-
-.header__btn--closer::after {
-    transform: rotate(-45deg);
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
 }
 
 .header__link {
@@ -85,14 +60,18 @@
 }
 
 .header__navigation {
-    padding-top: 220px;
     background-color: #ffffff;
-    height: 56px;
+    min-height: 56px;
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 
-.header__menu-btn--open {
+.header__navigation--open {
+    padding-bottom: 56px;
+}
+
+.header__button--open {
     width: 50px;
     height: 50px;
     margin-left: auto;
@@ -102,7 +81,7 @@
     padding: 0;
 }
 
-.header__menu-btn--open::before {
+.header__button--open::before {
     content: "";
     position: absolute;
     width: 23px;
@@ -111,6 +90,30 @@
     top: 14px;
     background-color: #81b3d2;
     box-shadow: 0 7px 0 0 #81b3d2, 0 14px 0 0 #81b3d2;
+}
+
+.header__button--close {
+    padding: 15px;
+    margin-left: -13px;
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+
+.header__button--close::before,
+.header__button--close::after {
+    width: 4px;
+    height: 25px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 23px;
+}
+
+.header__button--close::after {
+    transform: rotate(-45deg);
 }
 
 .header__logo-link {
@@ -133,6 +136,7 @@
 }
 
 .header__nav-logo {
+    position: absolute;
     width: 102px;
     height: 83px;
     transform: translateX(-51px);
@@ -140,22 +144,22 @@
 
 .header {
     width: 320px;
-    padding-bottom: 388px;
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-mobile.jpg");
+}
+
+.header__intro {
+    height: 389px;
+    background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: center 100%, center 75%, left 100%;
+    background-position: center 100%, center 45%, left 100%;
     background-size: 1200px 57px, 282px 214px, auto;
 }
 
-.header--small {
-    background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA.svg"), url("../../img/back-mobile.jpg");
+.header__intro--small {
+    height: 150px;
+    background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: center 100%, center 83%, left 100%;
+    background-position: center 100%, center 50%, left 100%;
     background-size: 1200px 57px, 229px 39px, auto;
-}
-
-.header--form {
-    padding-bottom: 158px;
 }
 
 .header__logo {
@@ -176,6 +180,10 @@
 }
 
 @media (min-width: $tablet-width) {
+    
+    .header__button {
+        display: none;
+    }
 
     .header__menu {
         position: relative;
@@ -188,6 +196,10 @@
     .header__navigation {
         height: auto;
         min-height: 56px;
+    }
+
+    .header__navigation--open {
+        padding-bottom: 0px;
     }
 
     .header__menu {
@@ -258,25 +270,26 @@
         padding-top: 0;
     }
 
-    .header__menu-btn--open {
+    .header__button--open {
         display: none;
     }
 
-    .header {
-        padding-bottom: 518px;
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-tablet.jpg");
-        background-position: center 100%, center 60%, left 100%;
+    .header__intro {
+        height: 518px;
+        background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-tablet.jpg");
+        background-position: center 100%, center 50%, left 100%;
         background-size: 1200px 57px, 460px 350px, auto;
     }
 
-    .header--small {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA.svg"), url("../../img/back-tablet--small.jpg");
-        background-position: center 100%, center 60%, left 100%;
+    .header__intro--small {
+        height: 300px;
+        background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-tablet--small.jpg");
+        background-position: center 100%, center 45%, left 100%;
         background-size: 1200px 57px, 458px 78px, auto;
     }
 
-    .header--form {
-        padding-bottom: 290px;
+    .header__nav-logo {
+        position: relative;
     }
 }
 
@@ -309,23 +322,19 @@
         font-size: 14px;
     }
 
-    .header {
-        padding-bottom: 518px;
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-desktop.jpg");
+    .header__intro {
+        background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-desktop.jpg");
         background-position: center 100%, center 60%, center 100%;
         background-color: #b7c8d3;
     }
 
-    .header--small {
-        background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA.svg"), url("../../img/back-desktop--small.jpg");
-        background-position: center 100%, center 60%, center 100%;
+    .header__intro--small {
+        height: 357px;
+        background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-desktop--small.jpg");
+        background-position: center 100%, center 45%, center 100%;
         background-size: 1200px 57px, 461px 80px, auto;
     }
 
-    .header--form {
-        padding-bottom: 300px;
-    }
-    
     .header__nav-logo {
         display: block;
         width: 188px;

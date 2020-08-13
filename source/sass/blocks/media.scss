@@ -73,7 +73,7 @@
     position: absolute;
     left: 0;
     top: -3px;
-    background-image: url("../../img/like-icon.svg");
+    background-image: url("../img/like-icon.svg");
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@
     }
 
     .media__likes::before {
-        background-image: url("../../img/like-icon-white.svg");
+        background-image: url("../img/like-icon-white.svg");
     }
 
     .media__video {
