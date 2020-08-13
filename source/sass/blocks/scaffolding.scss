@@ -7,18 +7,18 @@
 }
 
 @font-face {
-  font-family: 'PTSans-Bold';
-  src: url('../../fonts/PTSans-Bold.woff') format('woff'),
-      url('../../fonts/PTSans-Bold.woff2') format('woff2');
+  font-family: "PTSans-Bold";
+  src: url("../../fonts/PTSans-Bold.woff") format("woff"),
+      url("../../fonts/PTSans-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PTSans';
-  src: url('PTSans-Regular.woff2') format('woff2'),
-      url('PTSans-Regular.woff') format('woff');
+  font-family: "PTSans";
+  src: url("PTSans-Regular.woff2") format("woff2"),
+      url("PTSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,20 +27,20 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'PTSans', sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   background-color: #eaeaea;
   
 }
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .wrapper {
   margin: 0 auto;
   width: 320px;
   box-shadow: 0 -5px 9px 2px #dbdbdb;
+  background-color: white;
 }
 
 @media (min-width: $tablet-width) {

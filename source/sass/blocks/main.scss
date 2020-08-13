@@ -1,8 +1,11 @@
 .main {
     background-color: white;
-    padding-top: 45px;
     width: 320px;
 }
+
+.main .main__title--pt45 {
+    padding-top: 45px;
+} 
 
 .main__title {
     margin: 0 auto;
@@ -22,17 +25,9 @@
     text-transform: uppercase;
 }
 
-.main--form {
-    padding-top: 40px;
-}
-
 @media (min-width: $tablet-width) {
     .main {
         width: 768px;
-    }
-
-    .main--form {
-        padding-top: 40px;
     }
 
     .main__title {
@@ -52,10 +47,6 @@
 @media (min-width: $desktop-width) {
     .main {
         width: 1200px;
-    }
-
-    .main--form {
-        padding-top: 110px;
     }
 }
 

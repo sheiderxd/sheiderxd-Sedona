@@ -12,9 +12,9 @@
             <nav class="header__navigation">
                 <a class="header__logo-link" href="index.html">
                     <picture>
-                        <source media="(min-width:1280px)" srcset="img/logotype-desktop.svg">
+                        <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
                         <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
-                        <img class="header__nav-logo" src="img/logotype-mobile.svg" alt="Логотип">
+                        <img class="header__nav-logo" width="102" height="83" src="img/logotype-mobile.svg" alt="Логотип">
                     </picture>
                 </a>
                 <button class="header__btn header__menu-btn--open"></button>
@@ -26,9 +26,9 @@
                 </ul>
             </nav>
         </header>
-        <main class="main main--form">
+        <main class="main">
             <section class="feedback">
-                <h1 class="feedback__title title">Оставьте свой отзыв</h1>
+                <h1 class="feedback__title feedback__title--pt40 feedback__title--pt120 title">Оставьте свой отзыв</h1>
                 <p class="feedback__subtitle subtitle">
                     Помогите нашим отелям стать лучше! оставьте отзыв
                     о них, а также о посещенных вами достопримечательностях
@@ -36,25 +36,37 @@
                 <hr class="feedback__hr">
                 <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
                     <div class="feedback__fieldset feedback__name">
-                        <legend class="feedback__title feedback__title--name title">Представьтесь:</legend>
-                        <label>Имя*:<input type="text" value="Петр" class="feedback__input"></label>
-                        <label>Фамилия*:<input type="text" value="Иванов" class="feedback__input"></label>
-                        <label>Отчество:<input type="text" value="Александрович" class="feedback__input"></label>
+                        <h2 class="feedback__title feedback__title--name title">Представьтесь:</h2>
+                        <div class="feedback__wrapper">
+                            <label for="feedback__name--id">Имя*:</label>
+                            <input type="text" value="Петр" class="feedback__input" id="feedback__name--id">
+                        </div>
+                        <div class="feedback__wrapper">
+                            <label for="feedback__second-name--id">Фамилия*:</label>
+                            <input type="text" value="Иванов" class="feedback__input" id="feedback__second-name--id">
+                        </div>
+                        <div class="feedback__wrapper">
+                            <label for="feedback__third-name--id">Отчество:</label>
+                            <input type="text" value="Александрович" class="feedback__input" id="feedback__third-name--id">
+                        </div>
                     </div>
                     <hr class="feedback__hr">
                     <div class="feedback__fieldset feedback__fieldset--width feedback__contacts">
-                        <legend class="feedback__title title">Контактная информация:</legend>
+                        <h2 class="feedback__title title">Контактная информация:</h2>
                         <div class="feedback__wrapper">
                             <label class="feedback__label--phonepic">
                                 <span class="feedback__label feedback__label--mobile">Контактный телефон*:</span>
                                 <span class="feedback__label feedback__label--desktop">Телефон*:</span>
                                 <input type="tel" value="Введите телефон" class="feedback__input"></label>
-                            <label class="feedback__label--mailpic">Электронная почта*:<input type="email" value="Введите e-mail" class="feedback__input"></label>
+                            <label class="feedback__label--mailpic">
+                                <span class="feedback__label">Электронная почта*:</span>
+                                <input type="email" value="Введите e-mail" class="feedback__input">
+                            </label>
                         </div>
                     </div>
                     <hr class="feedback__hr">
                     <div class="feedback__fieldset feedback__impression feedback__checkbox feedback__checkbox--round">
-                        <legend class="feedback__title title">ВАше Общее впечатление:</legend>
+                        <h2 class="feedback__title title">ВАше Общее впечатление:</h2>
                         <div class="feedback__wrapper">
                             <input type="radio" name="impression" class="feedback__input visually-hidden" id="feedback__good" checked>
                             <label for="feedback__good">Скорее положительное</label>
@@ -66,7 +78,7 @@
                     </div>
                     <hr class="feedback__hr">
                     <div class="feedback__fieldset feedback__fieldset--sight feedback__attractions feedback__fieldset--width feedback__checkbox feedback__checkbox--square">
-                        <legend class="feedback__title title">Посещенные достопримечательности:</legend>
+                        <h2 class="feedback__title title">Посещенные достопримечательности:</h2>
                         <div class="feedback__wrapper">
                             <input type="checkbox" class="feedback__input visually-hidden" id="checkbox__bridge" checked><label for="checkbox__bridge">Мост Дьявола</label>
                             <input type="checkbox" class="feedback__input visually-hidden" id="checkbox__mountain" checked><label for="checkbox__mountain">Гора-Колокол</label>
@@ -76,9 +88,8 @@
                     </div>
                     <hr class="feedback__hr">
                     <fieldset class="feedback__fieldset feedback__text feedback__fieldset--width">
-                        <legend class="feedback__title title">Опишите свои эмоции</legend>
-                            <textarea class="feedback__feedback-text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-                        </legend>
+                        <h2 class="feedback__title title">Опишите свои эмоции</h2>
+                        <textarea class="feedback__feedback-text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
                     </fieldset>
                     <button class="feedback__button" type="submit">Отправить отзыв</button>
                     <span class="feedback__ps">* — обязательные поля</span>

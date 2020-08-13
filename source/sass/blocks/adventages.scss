@@ -71,6 +71,7 @@
 
 .advantage__img {
     vertical-align: bottom;
+    height: 100%;
 }
 
 .advantage__list--inner {
@@ -121,6 +122,10 @@
 }
 
 @media (min-width: $tablet-width) {
+    .advantage__img {
+        width: 512px;
+    }
+
     .advantage__list{
         width: 100%;
     }
@@ -254,8 +259,9 @@
 }
 
 @media (min-width: $desktop-width) {
-    .advantage__img--desktop {
-        display: block;
+
+    .advantage__img {
+        width: 800px;
     }
 
     .adventage__1,
@@ -291,7 +297,7 @@
     }
     
     .adventage__3 .advantage__subtitle {
-        width: 380px;
+        width: 375px;
         font-size: 14px;
     }
 }

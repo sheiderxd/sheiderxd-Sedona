@@ -1,7 +1,7 @@
 .header {
     position: relative;
     font-family: PT-sans;
-    background-color: #81b3d2;
+    background-color: #b7c8d3;
     width: 320px;
 }
 
@@ -176,14 +176,25 @@
 }
 
 @media (min-width: $tablet-width) {
+
+    .header__menu {
+        position: relative;
+    }
     
     .header {
         width: 768px;
     }
 
+    .header__navigation {
+        height: auto;
+        min-height: 56px;
+    }
+
     .header__menu {
         box-sizing: border-box;
         display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
         width: 768px;
         background-color: white;
         justify-content: flex-start;
@@ -302,7 +313,7 @@
         padding-bottom: 518px;
         background-image: url("../../img/intro-triangle.svg"), url("../../img/text-index.svg"), url("../../img/back-desktop.jpg");
         background-position: center 100%, center 60%, center 100%;
-        background-color: #eaeaea;
+        background-color: #b7c8d3;
     }
 
     .header--small {

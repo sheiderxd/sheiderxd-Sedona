@@ -5,7 +5,7 @@
 }
 
 .media__hr {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .media__title {
@@ -65,6 +65,7 @@
 .media__photo {
     margin-bottom: 10px;
     vertical-align: bottom;
+    height: 95%;
 }
 
 .media__likes::before {
@@ -109,6 +110,7 @@
     }
 
     .media__photo {
+        height: 100%;
         margin: 0;
     }
 
@@ -141,8 +143,8 @@
     }
 
     .media__item--main {
-        width: auto;
-        min-height: 480px;
+        width: 648px;
+        min-height: 324px;
     }
 
     .media__item--second .media__wrapper {
@@ -155,8 +157,7 @@
     }
 
     .media__iframe {
-        width: 650px;
-        height: 500px;
+        height: 400px;
     }
 
     .header__link {
@@ -202,6 +203,10 @@
         padding-right: 200px;
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .media__iframe {
+        height: 500px;
     }
 
     .media__title {

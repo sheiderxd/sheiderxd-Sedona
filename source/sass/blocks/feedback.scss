@@ -1,7 +1,15 @@
 .feedback__title {
+    margin: 0 auto;
+}
+
+.feedback__title {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+
+.feedback .feedback__title--pt40 {
+    padding-top: 40px;
 }
 
 .feedback__title--name {
@@ -30,18 +38,12 @@
 
 .feedback__name label {
     display: block;
-    margin-bottom: 17px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-}
-
-.feedback__name label:last-of-type {
-    margin-bottom: 0;
+    box-sizing: border-box;
+    padding-top: 25px;
 }
 
 .feedback__input {
-    margin-left: 5px;
     height: 60px;
     border: none;
     background-color: #f2f2f2;
@@ -67,6 +69,19 @@
     border: solid 3px #e5e5e5;
     background-color: white;
 }
+
+.feedback__name .feedback__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.feedback__name .feedback__input {
+    margin-left: 5px;
+    width: 180px;
+    flex-grow: 1;
+} 
 
 .feedback__name label input:active, :hover, :focus {
     outline: 0;
@@ -130,6 +145,10 @@
     margin-bottom: 50px;
     cursor: pointer;
     position: relative;
+}
+
+.feedback {
+    background-color: white;
 }
 
 .feedback__checkbox label:last-of-type {
@@ -209,10 +228,13 @@
     font-weight: bold;
     font-size: 18px;
     resize: none;
+    font-family: "PTSans-Bold";
 }
 
-.feedback__feedback-text::placeholder {
+.feedback__feedback-text::placeholder,
+.feedback__feedback-text::-moz-placeholder {
     color: black;
+    opacity: 1
 }
 
 .feedback__button {
@@ -250,6 +272,7 @@
 
 .feedback__feedback-text {
     margin-bottom: 20px;
+    overflow: auto;
 }
 
 .feedback__ps {
@@ -271,6 +294,7 @@
 
 .feedback__attractions .feedback__title {
     margin-bottom: 40px;
+    width: 280px;
 } 
 
 .feedback__attractions label {
@@ -279,14 +303,19 @@
 
 .feedback__form {
     padding-bottom: 40px;
+    background-color: white;
 }
 
-.feedback__label {
+.feedback__label--desktop {
     display: none;
 }
 
 .feedback__label--mobile {
     display: block;
+}
+
+.feedback .feedback__input::-ms-clear {
+    display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -380,13 +409,11 @@
 
     .feedback__fieldset--width .feedback__title::before {
         left: 0;
-        top: 0;
         margin-top: 15px;
     }
 
     .feedback__fieldset--width .feedback__title::after {
         right: 0;
-        top: 0;
         margin-top: 15px;
     }
 
@@ -483,14 +510,13 @@
         margin-bottom: 25px;
     }
 
-    .feedback__contacts label::after {
-        bottom: auto;
+    .feedback .feedback__title--pt120 {
+        padding-top: 120px;
     }
 
     .feedback__contacts label {
         display: flex;
         margin-bottom: 0;
-        width: 480px;
         flex-shrink: 0;
         align-items: center;
     }
@@ -501,10 +527,12 @@
         position: relative;
         box-sizing: border-box;
         margin-left: 10px;
-    }
+    }  
 
     .feedback__contacts .feedback__wrapper {
         display: flex;
+        flex-shrink: 0;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -541,7 +569,7 @@
         display: none;
     }
 
-    .feedback__label {
+    .feedback__label--mobile {
         display: none;
     }
 
@@ -550,7 +578,9 @@
     }
     
     .feedback__contacts .feedback__title::before,
-    .feedback__contacts .feedback__title::after {
+    .feedback__contacts .feedback__title::after,
+    .feedback__fieldset--width .feedback__title::after,
+    .feedback__fieldset--width .feedback__title::before {
         display: block;
         position: absolute;
         content: "";
@@ -559,16 +589,24 @@
         background-color: #dbdbdb;
     }
 
-    .feedback__contacts .feedback__title::before {
+    .feedback__contacts .feedback__title::before,
+    .feedback__fieldset--width .feedback__title::before {
         left: 0;
         top: 0;
         margin-top: 15px;
     }
 
-    .feedback__contacts .feedback__title::after {
+    .feedback__contacts .feedback__title::after,
+    .feedback__fieldset--width .feedback__title::after {
         right: 0;
         top: 0;
         margin-top: 15px;
+    }
+
+    .feedback__text .feedback__title::before,
+    .feedback__text .feedback__title::after {
+        top: auto;
+        bottom: 245px;
     }
 
     .feedback__impression .feedback__title, 
