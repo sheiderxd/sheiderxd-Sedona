@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 function browser() {
     browserSync.init({
         server: {
-            baseDir: "./source/"
+            baseDir: "./"
         },
         notify: false,
     })
@@ -14,7 +14,7 @@ function browser() {
 
 function watchFiles() {
     watch("./source/sass/**/*.scss", css);
-    watch("./source/*.html").on('change', browserSync.reload);
+    watch("./*.html").on('change', browserSync.reload);
 }
 
 function css() {

@@ -184,14 +184,14 @@ hr {
 
 .header__intro {
   height: 389px;
-  background-image: url("source/img/intro-triangle.svg"), url("source/img/text-index.svg"), url("source/img/back-mobile.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center 100%, center 45%, left 100%;
   background-size: 1200px 57px, 282px 214px, auto; }
 
 .header__intro--small {
   height: 150px;
-  background-image: url("source/img/intro-triangle.svg"), url("source/img/SEDONA.svg"), url("source/img/back-mobile.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center 100%, center 50%, left 100%;
   background-size: 1200px 57px, 229px 39px, auto; }
@@ -269,12 +269,12 @@ hr {
     display: none; }
   .header__intro {
     height: 518px;
-    background-image: url("source/img/intro-triangle.svg"), url("source/img/text-index.svg"), url("source/img/back-tablet.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-tablet.jpg");
     background-position: center 100%, center 50%, left 100%;
     background-size: 1200px 57px, 460px 350px, auto; }
   .header__intro--small {
     height: 300px;
-    background-image: url("source/img/intro-triangle.svg"), url("source/img/SEDONA.svg"), url("source/img/back-tablet--small.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-tablet--small.jpg");
     background-position: center 100%, center 45%, left 100%;
     background-size: 1200px 57px, 458px 78px, auto; }
   .header__nav-logo {
@@ -298,12 +298,12 @@ hr {
   .header__link {
     font-size: 14px; }
   .header__intro {
-    background-image: url("source/img/intro-triangle.svg"), url("source/img/text-index.svg"), url("source/img/back-desktop.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-desktop.jpg");
     background-position: center 100%, center 60%, center 100%;
     background-color: #b7c8d3; }
   .header__intro--small {
     height: 357px;
-    background-image: url("source/img/intro-triangle.svg"), url("source/img/SEDONA.svg"), url("source/img/back-desktop--small.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-desktop--small.jpg");
     background-position: center 100%, center 45%, center 100%;
     background-size: 1200px 57px, 461px 80px, auto; }
   .header__nav-logo {
@@ -351,7 +351,7 @@ hr {
     width: 1200px; } }
 
 .advantage__item--vector-blue {
-  background-image: url(source/img/vectorwhite.svg);
+  background-image: url(../img/vectorwhite.svg);
   background-repeat: no-repeat;
   padding-top: 75px;
   background-size: 800px 60px;
@@ -379,17 +379,17 @@ hr {
   box-sizing: border-box; }
 
 .advantage__item--home {
-  background-image: url("source/img/icon-house.svg");
+  background-image: url("../img/icon-house.svg");
   background-size: 39px 37px;
   background-position: 12px 0px; }
 
 .advantage__item--items {
-  background-image: url("source/img/icon-gift.svg");
+  background-image: url("../img/icon-gift.svg");
   background-size: 32px 38px;
   background-position: 15px 0px; }
 
 .advantage__item--food {
-  background-image: url("source/img/icon-burger.svg");
+  background-image: url("../img/icon-burger.svg");
   background-size: 40px 35px;
   background-position: 12px 0px; }
 
@@ -493,13 +493,13 @@ hr {
   .advantage__item--inner {
     background-size: auto; }
   .advantage__item--home {
-    background-image: url("source/img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
     background-size: 75px 72px; }
   .advantage__item--items {
-    background-image: url("source/img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-size: 75px 72px; }
   .advantage__item--food {
-    background-image: url("source/img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     background-size: 75px 72px; }
   .advantage__item--inner {
     background-position: center 30%;
@@ -710,15 +710,15 @@ hr {
   margin-right: 6px; }
 
 .footer__link--twitter::before {
-  background-image: url("source/img/icon-twitter.svg");
+  background-image: url("../img/icon-twitter.svg");
   background-size: 18px 14px; }
 
 .footer__link--facebook::before {
-  background-image: url("source/img/icon-facebook.svg");
+  background-image: url("../img/icon-facebook.svg");
   background-size: 9px 18px; }
 
 .footer__link--youtube::before {
-  background-image: url("source/img/icon-youtube.svg");
+  background-image: url("../img/icon-youtube.svg");
   background-size: 20px 14px; }
 
 .footer__copyright {
@@ -870,13 +870,13 @@ hr {
   background-color: #e6e6e6; }
 
 .feedback__label--phonepic::after {
-  background-image: url("source/img/phone.svg");
+  background-image: url("../img/phone.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px 18px; }
 
 .feedback__label--mailpic::after {
-  background-image: url("source/img/mail.svg");
+  background-image: url("../img/mail.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 21px 17px; }
@@ -919,7 +919,7 @@ hr {
   background-color: black; }
 
 .feedback__checkbox--square .feedback__input:checked + label::before {
-  background-image: url("source/img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-size: 24px 16px;
   background-position: center;
   background-repeat: no-repeat; }
@@ -933,7 +933,7 @@ hr {
   width: 26px;
   height: 26px;
   opacity: 0.3;
-  background-image: url("source/img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-size: 24px 16px;
   background-position: center;
   background-repeat: no-repeat;
