@@ -120,14 +120,14 @@
 }
 
 .feedback__label--phonepic::after {
-    background-image: url("../img/phone.svg");
+    background-image: url("source/img/phone.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 18px 18px;
 }
 
 .feedback__label--mailpic::after {
-    background-image: url("../img/mail.svg");
+    background-image: url("source/img/mail.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 21px 17px;
@@ -179,7 +179,7 @@
 }
 
 .feedback__checkbox--square .feedback__input:checked + label::before {
-    background-image: url("../img/tick.svg");
+    background-image: url("source/img/tick.svg");
     background-size: 24px 16px;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@
     width: 26px;
     height: 26px;
     opacity: 0.3;
-    background-image: url("../img/tick.svg");
+    background-image: url("source/img/tick.svg");
     background-size: 24px 16px;
     background-position: center;
     background-repeat: no-repeat;
