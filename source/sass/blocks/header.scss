@@ -148,7 +148,7 @@
 
 .header__intro {
     height: 389px;
-    background-image: url("source/img/intro-triangle.svg"), url("source/img/text-index.svg"), url("source/img/back-mobile.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center 100%, center 45%, left 100%;
     background-size: 1200px 57px, 282px 214px, auto;
@@ -156,7 +156,7 @@
 
 .header__intro--small {
     height: 150px;
-    background-image: url("source/img/intro-triangle.svg"), url("source/img/SEDONA.svg"), url("source/img/back-mobile.jpg");
+    background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center 100%, center 50%, left 100%;
     background-size: 1200px 57px, 229px 39px, auto;
@@ -276,14 +276,14 @@
 
     .header__intro {
         height: 518px;
-        background-image: url("source/img/intro-triangle.svg"), url("source/img/text-index.svg"), url("source/img/back-tablet.jpg");
+        background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-tablet.jpg");
         background-position: center 100%, center 50%, left 100%;
         background-size: 1200px 57px, 460px 350px, auto;
     }
 
     .header__intro--small {
         height: 300px;
-        background-image: url("source/img/intro-triangle.svg"), url("source/img/SEDONA.svg"), url("source/img/back-tablet--small.jpg");
+        background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-tablet--small.jpg");
         background-position: center 100%, center 45%, left 100%;
         background-size: 1200px 57px, 458px 78px, auto;
     }
@@ -323,14 +323,14 @@
     }
 
     .header__intro {
-        background-image: url("source/img/intro-triangle.svg"), url("source/img/text-index.svg"), url("source/img/back-desktop.jpg");
+        background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-desktop.jpg");
         background-position: center 100%, center 60%, center 100%;
         background-color: #b7c8d3;
     }
 
     .header__intro--small {
         height: 357px;
-        background-image: url("source/img/intro-triangle.svg"), url("source/img/SEDONA.svg"), url("source/img/back-desktop--small.jpg");
+        background-image: url("../img/intro-triangle.svg"), url("../img/SEDONA.svg"), url("../img/back-desktop--small.jpg");
         background-position: center 100%, center 45%, center 100%;
         background-size: 1200px 57px, 461px 80px, auto;
     }
